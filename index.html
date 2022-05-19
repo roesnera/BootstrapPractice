@@ -1,15 +1,20 @@
-
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Best National Parks In Washington</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Best National Parks In Washington</title>
 
-        <!-- Link to bootstrap here -->
+    <!-- Link to bootstrap here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
 
-	</head>
-
-
-    <!-- Style the below elements using bootstrap
+  <!-- Style the below elements using bootstrap
         remember to make your site responsive at different viewport sizes
         You must add:
             a navbar
@@ -17,60 +22,134 @@
             an offcanvas component 
         
         If you are curious about how these work, remember to refer to the bootstrap documentation! -->
-	<body>
+  <body>
+    <header>
+      <!--Navbar link-->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-		<header><h1>Three Best National Parks In Washington</h1></header>
+      <h1>Three Best National Parks In Washington</h1>
+    </header>
 
-			<main>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+						<div class="col">
+								<!-- Content here -->
+								<div class="card" style="width: 18rem;">
+  <img src="https://greatruns.com/wp-content/uploads/2017/05/mt-rainier-natl-park.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"> Rainier National Park</h5>
+    
+    <a href="#" class="btn btn-primary">Learn More</a>
+  </div>
+</div>
+						</div>
+					
 
-				<section><h2>Rainier National Park</h2></section>
-				<img src="https://greatruns.com/wp-content/uploads/2017/05/mt-rainier-natl-park.jpeg">
+					
+						<div class="col">
+								<!-- Content here -->
+								<div class="card" style="width: 18rem;">
+  <img src="https://nas-national-prod.s3.amazonaws.com/styles/hero_image/s3/north-cascades.jpg?itok=1RlWSFws" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">North Cascades National Park</h5>
+    
+    <a href="#" class="btn btn-primary">Learn More</a>
+  </div>
+</div>
+						</div>
+					
 
+					
+						<div class="col">
+								<!-- Content here -->
+								<div class="card" style="width: 18rem;">
+  <img src="https://www.themandagies.com/wp-content/uploads/2020/02/rialto-beach-hole-in-the-wall-hike-olympic-national-park-washington-pnw-the-mandagies-57.jpg"" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Olympic National Park</h5>
+    
+    <a href="#" class="btn btn-primary">Learn More</a>
+  </div>
+</div>
+						</div>
+					</div>
+        </div>
+     
+      <table>
+        <h3>Summer Admission Prices</h3>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>Rainier National Park</th>
+            <th>North Cascades National Park</th>
+            <th>Olympic National Park</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>Admission</td>
+            <td>$25</td>
+            <td>Free</td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <form>
+<h3>Subscribe For More Information:</h3>
+				<div class="row">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+  </div>
+</div>
+<button type="button" class="btn btn-light">Submit</button>
+        
+        
+    </main>
 
-				<section><h2>North Cascades National Park</h2></section>
-				<img src="https://nas-national-prod.s3.amazonaws.com/styles/hero_image/s3/north-cascades.jpg?itok=1RlWSFws" width="550" height="500">
-
-
-				<section><h2>Olympic National Park</h2></section>
-				<img src="https://www.themandagies.com/wp-content/uploads/2020/02/rialto-beach-hole-in-the-wall-hike-olympic-national-park-washington-pnw-the-mandagies-57.jpg" width="550" height="500">
-
-
-					<table>
-						<h3>Summer Admission Prices</h3>
-    					<thead>
-    						<tr>
-      							<th></th>
-      							<th></th>
-      							<th>Rainier National Park</th>
-      							<th>North Cascades National Park</th>
-      							<th>Olympic National Park</th>
-    						</tr>
-    					</thead>
-    						<tbody>
-    							<tr>
-    								<td></td>
-      								<td>Admission</td>
-      								<td>$25</td>
-      								<td>Free</td>
-      								<td>Free</td>
-    							</tr>
-    						</tbody>
-  					</table>
-<br>
-<br>
-  					<form>
-  						<h3>Subscribe For More Information:</h3>
-  						<label for="name">Name:</label><br>
-  							<input type="text" id="name" name="name"><br>
-  						<label for="emailadd">Email Address:</label><br>
-  							<input type="text" id="emailadd" name="emailadd"><br>
-  							<input type="submit" id="submit" name="submit"><br>
-					</form>
-
-
-
-			</main>		
-
-	</body>
-
+    <!--Js bootstrap link-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
