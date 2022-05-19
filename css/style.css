@@ -1,0 +1,46 @@
+
+body {
+  background-color: cornflowerblue;
+}
+header > h1 {
+  text-align: center;
+}
+.hero {
+  position: relative;
+  top:50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.table-header {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.btncolor{
+  background-color: #b923ff;
+  border-radius: 55555px;
+  padding: 1rem 2rem!important;
+  color: #ffff;
+  margin-bottom: 2rem;
+  
+}
+form {
+  position: relative;
+  left: 45%;
+}
+
+form>h1 {
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
