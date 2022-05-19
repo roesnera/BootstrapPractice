@@ -4,7 +4,7 @@
 	<head>
 		<title>Best National Parks In Washington</title>
 
-        <!-- Link to bootstrap here -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	</head>
 
@@ -19,22 +19,28 @@
         If you are curious about how these work, remember to refer to the bootstrap documentation! -->
 	<body>
 
+		<div class="nav justify-content-center">
+			<a href="#R" class="nav-link">Rainier National Park</a>
+			<a href="#NC" class="nav-link">North Cascades National Park</a>
+			<a href="#O" class="nav-link">Olympic National Park</a>
+		</div>
+
 		<header><h1>Three Best National Parks In Washington</h1></header>
 
 			<main>
 
-				<section><h2>Rainier National Park</h2></section>
+				<section id="R"><h2>Rainier National Park</h2></section>
 				<img src="https://greatruns.com/wp-content/uploads/2017/05/mt-rainier-natl-park.jpeg">
 
 
-				<section><h2>North Cascades National Park</h2></section>
+				<section id="NC"><h2>North Cascades National Park</h2></section>
 				<img src="https://nas-national-prod.s3.amazonaws.com/styles/hero_image/s3/north-cascades.jpg?itok=1RlWSFws" width="550" height="500">
 
 
-				<section><h2>Olympic National Park</h2></section>
+				<section id="O"><h2>Olympic National Park</h2></section>
 				<img src="https://www.themandagies.com/wp-content/uploads/2020/02/rialto-beach-hole-in-the-wall-hike-olympic-national-park-washington-pnw-the-mandagies-57.jpg" width="550" height="500">
 
-
+				
 					<table>
 						<h3>Summer Admission Prices</h3>
     					<thead>
@@ -55,7 +61,8 @@
       								<td>Free</td>
     							</tr>
     						</tbody>
-  					</table>
+					</table>
+
 <br>
 <br>
   					<form>
@@ -66,7 +73,6 @@
   							<input type="text" id="emailadd" name="emailadd"><br>
   							<input type="submit" id="submit" name="submit"><br>
 					</form>
-
 
 
 			</main>		
