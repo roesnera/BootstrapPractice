@@ -26,13 +26,19 @@ header > h1 {
   margin-bottom: 2rem;
   
 }
-form {
-  position: relative;
-  left: 45%;
-}
+
 
 form>h1 {
 text-align: center;
+}
+
+.banner {
+  background:linear-gradient(to left, #007bff, #9198e5);
+}
+.form-control{
+  background:#F2F2F2;
+  border-radius:0px;
+  border:none;
 }
 
 
