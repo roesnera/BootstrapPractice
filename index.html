@@ -5,6 +5,9 @@
 		<title>Best National Parks In Washington</title>
 
         <!-- Link to bootstrap here -->
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+				<link rel="stylesheet" href="./css/style.css">
+  </head>
 
 	</head>
 
@@ -18,54 +21,168 @@
         
         If you are curious about how these work, remember to refer to the bootstrap documentation! -->
 	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+				
+				</ul>
+			</div>
+		</nav>
 
 		<header><h1>Three Best National Parks In Washington</h1></header>
 
 			<main>
+				
 
-				<section><h2>Rainier National Park</h2></section>
-				<img src="https://greatruns.com/wp-content/uploads/2017/05/mt-rainier-natl-park.jpeg">
+				
+				
+
+       <div class="hero">
+				<section>
+					<div class="card" style="width: 18rem;">
+						<img src="https://greatruns.com/wp-content/uploads/2017/05/mt-rainier-natl-park.jpeg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text"><h2>Rainier National Park</h2></p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="card" style="width: 18rem;">
+						<img src="https://nas-national-prod.s3.amazonaws.com/styles/hero_image/s3/north-cascades.jpg?itok=1RlWSFws" alt="...">
+						<div class="card-body">
+							<p class="card-text"><h2>North Cascades National Park</h2></p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="card" style="width: 18rem;">
+						<img src="https://www.themandagies.com/wp-content/uploads/2020/02/rialto-beach-hole-in-the-wall-hike-olympic-national-park-washington-pnw-the-mandagies-57.jpg"  alt="...">
+						<div class="card-body">
+							<p class="card-text"><h2>Olympic National Park</h2></p>
+						</div>
+					</div>
+				</section>
+			</div>
 
 
-				<section><h2>North Cascades National Park</h2></section>
-				<img src="https://nas-national-prod.s3.amazonaws.com/styles/hero_image/s3/north-cascades.jpg?itok=1RlWSFws" width="550" height="500">
+			<div class="container mt-5">
+				<h3 class="table-header">Summer Admission Prices</h3>
+				<div class="row">
+		
+		
+					<div class="col-lg-4 col-md-6 mb-3">
+						<div class="card py-4 px-lg-5 h-100">
+							<div class="card-body d-flex flex-column">
+								<div class="text-center">
+									<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQUFBcVFBUYGBcZGh0dGhoaHCAdGh0aGhoZGh0dHR0eICwjHCIqIBkaJTYkKS0vMzMzGiM4PjgyPSwyMy8BCwsLDw4PHhISHjIqIyk0MjI0MjI0MjIyNDIyMjIyMjIyMjIyMjIyNDIyMjQyMjIyOjIyMjIyMjIyMjIyMjIyMv/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EAEEQAAIBAwIEBAQEBAQEBQUAAAECEQADIRIxBAVBURMiYXEGgZGhMrHB8BRCUtEjcpLxFTOC4RZDU7LSJGOiwuL/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAsEQACAgEDAwIFBQEBAAAAAAAAAQIRAxIhMQRBURNhMnGRsdEUIoGhweFS/9oADAMBAAIRAxEAPwAtkqs26PNuq2t17SmeO4sCZKgUoxrdRKU6mACNuolKLNuom3TqQAQpUTbospUSlMpGpMDNuom3Rht1EpR1C6EBG1UWt0aUrmmjqEeJAXhVzw6YW+GZzCKWPYCabcFyODN51QH8KmCTG+dcY64670k80YcjQ6Zy4EPCcBcuEi2paN+w9zTfhuRBc3dUCZCx0/zGT8hWj/w1jVa0qkESRCnoQoMTPWe1XrdJcaWIBGRAOkdDqBgTnGSZ6RXHk6qcuNkdePpYR53ZNPhrggoOgtImdTfoYqlvh/g+ls/6m/vTBXOmJJHsBP0qIYEhZEnpP77VxrJNct/U69EOyX0FT/DfDnbxF9mB+xH61Td+DmibdxWHZgVP6inTAqZdgFHQfqcgfb+7PgeJt3FJtkEAxgyJgH9aL6jJHhm9GEuUYNvhviQY8M/UR+dXWfhm+dwq+5/tW/j1oa9xQGFGfWm/WZHxQv6aCMePhW93T6n+1VPyC+u9sn/LB/KtTe5oq4/Ew/lBEz0gH2P0plw7hlB2JAMdpofqsi5D+mg+D5y3DFTBBB7EQa8LdfROI4a3cw6hvcZ+R3FJeM+Hettv+lv0P96pDqk+diUulrgzAt1IJR/EcvuW/wAaEDvuPqKHCVXWnwJ6bXJWEqYWpBakFoWFRIha6FqwLXQtCwkAtSC1MLUgtLZrIBa6FqwLUgtazUQC1LTUwtS00tjKIrKVEpV5WolatYjiDlKg1uiilRKUVIVwBGSqzbo0pUClOpE3ADKVApRpSom3RUxHACNuolKMZIqFi2bjFEjVGJwDiR8vXbOJpvUS5AoSfAKUorhuVXLnTQv9TiB8gY1VO7wLAqFnWANVxsIjk48NSvnPyjArw5doIN66pcjzMzwwGNt2Y+xFSnnv4S8MX/oNbjOH4WFDBycYUT/1Od8zgT0xQ6lOMvjWWXwwdIVSJB/F5m83YSAu+DRlvlHDA+I1tdIgqzneQDJByf8AqJO9Xvw0o4toLQMy6hQzAdsYnOfp0rmcjoSBG4a544VSHtqoJLn8OfaGaBiZ79qa8A1oKRbjTqMnu2Mmfl9qp4Pl1q0kNs0zqJk9p1Zx29aA5lbZSRZZmVwB4YBaXEwdZMIJgNuaD32Mtg7mfObdpXAbU6qTpGY942+ZFK+VcJbvv4wvXpgBgfIzQIyw/lwfwxVAW3wr29Y1CGBMjTrJXVg/hid+on5y5j8TJKLbcCMuILDGyg4nbf1pZbcFILVyHX+GuXLyW0eQucF2OTp8w1RgbTPU7xWw4OwtpAgUDGyjH2rP2eKW7cU27l1TAcgREDYMIhTmIwTHpRnGc8W2phtbzGkZJaMLA22zUZKUuSkXFLYfLQPEQxwc1bwvEq6K4IIYZIqT8P1X6UkWuRpJ8C7iOVrdEFmQgggrvPr3FT4vjRae2sHzbnpiPxHcHt70Bz3mYt3Eth2VgNTDZSsx+LodxjalN21L6rYlWt+Zi8nzGNIbaTgz1o1qkkw/DFtGv/jQen3qH8UelJrTm0n+I056CYBOBjPWkfN+el/JYuaSPxNIA9BJ/OqLHfBHWbK7zHSPNpj1rBc15xqusbYZATtCwANzpOZJnqOlV2OW8TeI8TKYJZjjtspgmDv96C5tw7o/h3GbSCSpkklRAH2iqwglwByvkYWecFR5xqxv5Rn2Az9ad8I4uW9YRkiPxRBPWDgj5zvvWT4a5bDibd1bZAYGNZHqYHmXyk9CM79dratFdBuQLTLgj8JUriO09jmkyTlDgpDHCa3KAldC0Xa4FohTrI9pI+WD8qrKRVI5FJWjnnicHTKgtSC1bprwWjYtEAtSC1ICpBaFjEQK7pqYWpaaFhoWlKiVogpUStVsk0wcrUStW3WVRLMFHqYr1hdYlcjvsKNgVlJWolaJv29AJJG0xOT7d6Q8XzVw+lQFEbuCvuYI1R7qKKkamM3EAntXkSSA3lMTo/E8Y6Ljcgb7mN6zq81uPEOQMFhbAViwxBLNORGQfl3d8KnEMxuWeHtWS2C9wl7hGDPTEjvSym0MoIKt8nFx1Z3YqCfIrCDH9enscaRMdSalxbi3eXzKtrdtRZWkCBoCkFvcz1q5OUPE3OKvTu2hgiT1gKu1Bnktu2jXFW62PL5yGeZ6DJmesnOwpNV8sfTXCKeIv27ksrNnUAuoLI6tkSDPl1QYHrmmPJuR6lBVbSCMEqbhOerFvP7gD0NAryW4baMqi1IGrxHI8NVM4G592+1b3h7iFV0mRAg9MDvtUZ5PBWGNdxZa5AiyWZrhmYYyqmI8oOw95obj7MSzsQoGVMAYzPvt6VoxWB+IeKucS4tKpFvXALahqYA9xhcb70sJSboaSSVnrvG2eIK2gpIKeViDKtiMY7Az6Us5tcuW0tWbYdnQBmfEpbDSAT+EHCn5CnnLuTpZ84lrmmJY+UHrEDH9qr5jwty6WRHCgzr0rkmIy526fSrqSsi0ZDmfFvxD6Vkg/gHaYJ29c1W9pbY0NpLgyWBMAxECcH3z3G+DLvKCrBOHJuMQQ9wMCondVjb571a/IrluJVXLQIOTOdjHTefSi2MqJ8kvst22qKXDGDlhAkHUe8Z37nvRXDlHvvcNtWlgEUwJJMBoiT/V5hsaEtWxadQWUywDMp6HBEnAUZOfxaYraWuHSyjXEIzklv8AKGmeo9cb1z5Mmle5bHDUxhwoFq2Fz5T8yD6D17Uda4hSJkSRMTSKzc8QC7pBJBC6SSNBgiQYAPyq5HPbH7xU4RdbjTkr2KOecNrueIXITTpIiQBmW232+lY+/wAwcubdtmuj/wAsFZIA8xMDqWGD0FbdjI2pcvBKjlwqg7Eqoke3aZz3xVoJIlKToSLyribrf4lxkVYC9yDknDb5iir/AML2oHhllIjMkjHcev61oLJkdfnVoQUzmxFFGZ5Xyj+HLXHYkCYCyS0iBIHvt6ClnD6rymzKoVuFtTZJJk6d5AGfNW3ayKGfgUiAgGdUCBJBnzGDiYoqZqMOnAvIDA3UIISCVE5MwRtOcjaCMRR3A8ULKQ1245U4QZtAbMGU4AxBxswIormIuLxCabqo8hiO7KI1xny7CCZgbdaYcXfV10XLBW64hjbBKEkrkRjMb+lZyuVMZLSrQx4Li08MtbVvL0/E1vAmDuywd/ka6/MkuBlKFrqg5TSJ7HJyMg0lt8DxKqmhUEEEy7athI9JI+Yph/w7UfF0C3djcMY9ZAwTvv6VNQS7jSyX2E1zinUhSxH9Jnf0nrUrnM7irI0zI3Gc9oNW8Nya+0eItorI3Y6o+SkTRP8A4eJw1wQNhEn603Abi+wJb5pcQw+kznaPy+X1prw3HIwz5T2J/WuWeRoGyZTTGSdRMgzjaIx85mqLvJoYgXFM7A+VvTbetqA4xYzXO1SihrPLriCEcKJmNOqcbdDRyWGjr/pI+01tSEca4EV/mKrcVMEMYLahgxOmN5jOYGRUuL4y3bt+I1wEMPLpjPtM/U4rB8NYuM4NtTIM6tgOsknA+dEcy4G7/wA26wYSAGmQREwoxgV0aF5ObU+ysM4nnC6tVpAzkHzOutlOBCtPodgBnFLW4i47zdLuQdj75BB+lNvhjhA9wlrZKQYaYgiD0I9sd80X/C2wLttLilRBdmAKr6rpyW6RW1KxqfcGe4RLM3g6sKgSTGIAAw2wzE/KgOH5c9wkWrT3M/jMKs+vT5avlR3LOE8ZXtW00IMyzea4xwNbAYEZCgRP1o7huWPw9xR4jLaIEjXkud9Kqc59KVvsFDfk/K0sDcF4hjpUZ3xiR9aZg9qU63xb8QMCCDrgXDvkgMCBGMgHHrXuHsqgALjSAdKsVW38kX8fzqLSvkrvV0T43m51m1Ytm7cH4jHkTr5jiT6T86m/Nm4a2GuA3Ljb6FMfWdIAnfFU2+GvPOi8sEYAttpAHZIj5kmpNyO41s+I3i3M6WcMqj/pyp+lB6HsMtS3BbfMl4qJsuQIMeICszILBTmN4OfStnwFoaFaSZzn8oECs78KcJfRmFy3CgeViFEGcgCAYP6VqtYHUVGbblXYsklHbksigeJ4Qbj6R+VXPxSjrPtULnFIRBnPasrFddxZfTcZB6eWg7/LfEXSzuBmdJgZEGQRmnP8UNOnLD13oRx2+5qkWyckgBOESzb029KxszCevWIk0AOAvBWbUGdydT3JGm3nCgfhB/fo89xWa4zlvGXLhfxFUBiVWTAGIgAbinRgXjeAIe07kG3qVYQEKqCJOMiR1iYrYcVdtlCbXm1KJEQGXJjMaSZOSKwnPPiHxFa0ghcajsSRvgdJ6UR8PXwLQcFlKsdUAEOIMahuTEgZoSx6mmzRyaVsa2y/kBKaDuROPX7YmOnSiUuERn/ahLDqygqVPWQIBq3VQ0pG1XuFJxDD196H4wapMAGD7T0rgu4kgj9fXFBcTxYwCd9o/XsKKW+wJS2LbBJiPzHrVi22By0n6fagL/FLbCkBgNoBAXPcxjbeo8x5l4ds3A/lkDYiJgDbtRoWxsAe9eW8swGBPYVhOY/EvEL5A1oAgHWkvIOxnoflNcb4rZLei2ddw73GAWJxgRk+pmMb1tIdRvL/AIcargWBmWiB6ydqBu87sj8DK5PYgL7lug9RNYXlbXb95Edng51XC1wgDrmBHSdhTJPikWrhRQXSYlgqgQYJUIPzo0azRcPzR3bT4nCg4hVu62PpAinFi4jGNa6v6dQ1fTes1Y+LeGY+fyZwY1Y7mBihuN51wN24GIcuoIVxNsfWQft3pXFhTRuDw1c/hz+xWX5byq44FwcbdCkSAskAf9RIpqOISwP8Ti9Q7Ppn5aQCfpSu13HVDFOHP8xJ9hFBXeTW9etUAJMkG3bYH/UCR8qVN8UICfDuWrnYaLiYG/mAaYx0r3E/FFwCF4W67R0UhPm7KDHyoUzWhtxvHeCNS2EIAAJ1hT9lP50IfiaIlLYJEx4v/wDNYTifiji9bFG0T/LOuPqIHyFBvzLjWM+LeM9QzAfQGKbTFcgTkzY8Lyq7c0hkdgNv5EX7Ak/5QKZ2uQK/m4iDpkKghVA9Bqkz6n5CoJxHFWl80gRlr1wRPfGqPrQ/DfEdu44trLO2BpkqWJ2BYA+skRW1Sl7B0xjxuNTy5R5RbVrZEQqrjvqzkegobieTcPpNsW9KMwZgPLqK7ewHYUUFuaRkKxOwJMCROepiemPWvcCC6C4wOsSPPPQkYkyASs+0VzPLpezbLLFa3SQg/wCHXUvKtsLbteTWwmWz+Euxn0gHrW6/hbZhtCzG8ZjtO9LWcspFyIjzKv4Y64oO3zK3aZLVslQwlSQcnqCzZn33pozlkkLKEYRob3+UWH0lranTt0A+QxVy2rabBRSbib9xtvMCYPmjT3Oxn2rqyAZM9umPX+9V0PyT1B/F3EeMbbHpQXD2BbUKpMCYkk7knc+9eFzr+VSNzFFRSFcmydVcRbLqV1FSdiNwehrnjDrj511OIVtiDTGOohCgEyRuYifWBtXGBHr+dUJxTyQ1thBOQQRHecRVniqdiP36isCyJuEbKT+/WpG6R0NTUn5VElvT0HcVgHfF/ZxVI4tCxUBpET2E95q3UTiD9v70g5xzjggrW7l1ZI/8uS2PVQR8jW2M2V865FbuEvae2rtMgnBO8+h+VCfwK8NbBvX7SaQQp3bOYA/m32FZLjOKBJWyW8PozjSZH80Ax9fpQL8Q9ttYPm/qJJaOwJO1FzrjcGz5PpXB85t6ZWWWANX4RHSZ2/ftTWzdFwCAwmZ6DHr2r5LY5zeQlp1zH4yTtPqK1fJPjRR5LltiSQAAoMjrg4xnc7Vx5MmWLutjphHFJUa/jmaIUgfMH/b3pT/C3wQGtNp7rLtnOwXSvb71oLXL7HEIWTVbOx0kY6R1GPSjOXcvZNSswdMgCMQT1B2Ij5zQ9bJLjh90P6ONK+/uZezbt21i4roA21y2dMk4JjePWjOP5WeKtFVvWwkySAYEdD2z60LzX4WZPFcee00sVJygA1eXOIIO24rM8r5u1u3bso5W4H8xAJU56/WPp8hrmny3QXCFcIYr8K8OB4bcZa3louKCRJPUGMmo3/hjgUUkcbbBHVnVuo6KQT1+tWHgbbtN60jS58wlCFMwIAE56n3pz/4OsAB7ahhHcZPrqxPvTetqfcV4q8CWxaW4WC3LVxAukm2GRiAAFUsQBAEDTtigk5OJKKqtDGVDb52MGdp67/Smy8bYtr4bMLRXBWRKntCjv+lCvzDh0ErcWSSfIrkjVkk+UA7DruetT15G3VlFDGlvRB+EtW4d+GIzpifEnHYqdJxOcetFXL/KdntoHjI0PvtkqfyEUy5dzzgdDHWA+0shMRtEj1NZz4iFi5a1JxYe6pMBtKswMArAVT0mTNVxaquRPI4LaIw4fmfADyLbUIPW5H0JBJ9hVXEc+4ND/h8Ktwn+ryj5TLH51i+Fsu5gGfmKZ3OV3LYkqCD/ADKdQ+cZHzq37eCKcuR2/wATIxCNwVooSBEknfejOYcLw2jV4I8MzJW9cAEDB0ZETj9KyaIQeurp+zTMXOIKnErhpMLAHWZGKWUHFpx2XcpHJFpqW77HP+DW3M20ZRGIuB5PTBQEVd/wdhhbukdiBP51y3z9rACILVsneRqJ7nJKgfuagfiS6c/xCf6E/wDhStvygKceyZ9Iv8RwzqfEuII/rcY7b0h5jxvAWSGRkF5STKDUNRUL5o6RG0Vjk4RCxdibnVVYZfPcEq0fMHqBV/MGe0guW7LWmYRcche0eUBm8OZMgRVY4EuRZZ32L73xfdGR4YztBMzvn6URyj4uuPc0PoKsCIAMzGIiTvj51mOB4cXWKlipI8sCRjocinFjkFhbZc32DDzB9BGmDsBMz8+lJL0cbp12/sGvJJWgK1z/AIhLjXEcFmxpbzACdhPbH0rvF8TxF5x4xKk7awUQT2kQKJbhUdrV3WG1i5q8ukswB80HadQMT0qPBcZctoDc4m5CPoCx4iHEnVJyu+PyqmPNBy0onKMuWOPh/hb9otFy1cUkSniMTHcCDsNsVo+J4W3fUC4sjpkgjvsayPNOa8O6f4di0xxJZIaeoGkAiB/MGq7kvPtCeGvCuAASvh6mBMTmZPzk1Zp8ipmkTlS2002Lj2vaHE+usE/Qilw5XxxMNxg0zkrbWY+gg/Wq+V8/a4SGtMgGzE+XeIyBmm54qcA0KZtSLRw4UDzbdTufUnvWb5rY4rxC1sQkbpBJMzJ6ztNHcVzK4jEeHOMf4igSdsTJz2jrvSji/iZlXyPaJ6jRcJ36HA+dGKaFbRUnPLgGl9Tn+YloBPaB0zFT4DixcuqXUgop0bmNPbPt710cx4S/b8S6AlwYOloadp3EjrnIrOcfzBVb/wCka5OZukQYIyF7e/pRlKKQN2zbcTz62h8zqcYkwOp/SlnFfHVq2NNtTdMdBoQEg4k5PT+UVhhbYn1O+5Nd/hI3Wai5SfCDxyxpzH4q4u+pQsEQ7hBHynJ+9KLBKjEfTpRVqxkCesema7xiC3ca2M6WIJPoYpW1F7vcZWyhXdvSq3t5E5qb3DsKtS1IE0YtSdIDencHe4Fx1o7lPNBYLMqiTHmO8dQAdumexNUXeAYQ5UgNsTsYwYPoRFC+AQY7g+n50ubG57PgaE9O6PqnJPiSylsN4qK27K0A5ycD36Ubx3xtYCHTdQNHQlh/+In718YZCp61eiTaa5JkOq/UMSfsPrXFHH6KrU+fudDzOXY+iWub8ZxdsjxSLbEgkKB5TuCY1RFDql+2dJt2nJgaxoW56FWlWBxuR0rC2XmAsljsJJk9KZcm4UXScAkaCJzswJx7A00nLFFym018jRnqqKW4z48i23+LrWT1ZbitESCAc7jHrQHE8TZZmKXFAOyqHA2zGomM+vWquaWAFvhIAt3QfZXBG3uUFINtqbFmU1a4Enae47ucXaWNJ147EQexn9JoR+Yk/hUL7ZP3oOxbJnEU54LhklQRi5bKg9NSkn6ytbL1GhWCP7nQFc5kxXSqAdzufrXOH410A0hcEEGIIPy3670wTgVCuOxcicnsPuoofjOWutpWGAQSfQhlUg/6pj0qHr45bPz3NUuUDnmV0GSQNohR0+VE3viDitObpjsIHTG2Y9KoawChI/GpEztpmJHvI+tUjhlmTJNVUoN3W6A5SjsW2+buqwq+cn8WTj2qu/zS64ILGDuJgHr+eak56Dc9BVRtd96p6mpb8Cp9yrxHc5JJPU0SljFcS2BtUtfrRjOKA3ZpuB+H7rEwSoGJ2BzBxI2GfWcU3fh7rMFF2bZAI6mNIGQR/VncSDFCJzR2VtTzkjfchdWNuqkUDwvHFLzqDMAETJgKurMDG/SvEl1XVzbd00ux3+njSSoo5uycPcR7TTqE6IPlCg6jq7Yii+Scy8jOQHhGgHAJzgTv1x6etZd77s9wkmYeZEf8xoPlJlcMcZNaTlC29GgPIIZYddJgjYYgd5O2Kp1KagpS3arf5Axbt1sW8NxkCyPDAhizmNLYMQJIkZ6d4pxb4zhi13xLQuIuloAB85USYHXPXP5VmVYl1QkzlcKcMG83rGkDIJ/OiHdvBvNDCQJIBAEOsagenl+5qHwzUvdFG9mM+Kbg8N/DXbYddepHB8uM6WkfzDb17UOl+0gJscVdt9YuIQPrbLf+2geO4mLdvqNJAJ2yEgA94HvSr+L9q9nps0pwtvzscmWKTqh5Zv3Hcqb3iBwZmWBIUwYcYyB0FDWiDi4zjcwoX+XaDqj7ULyzif8AEB8uP5ZEsdxE77dKU8fxJF5hkhWMA42H/amXUTeRxvshXBaU6H1+2koxdzbIyYGoQYIAmJ269frRzS2iPNvU1vB88bEkRKn0OcbUs4LmTLbuIYINskSJ8xuKO2MTRa8wuXbaW9CiCe8uAZjfHt9KE8+RLf3/AOGWNPgP4vluXuFcG2Cp28ym0G9/KZ+dUcztsDrQAK5/l7hVJ+Uk/em1ojRbtg58N41QNwuYn02zESetC8SQNUsNKhABk/1ddj2x89q4+k6iU5qLfF/Tj/CubGoxbSF/BW7jMQ3VSFkxkCfyFVvbcEhjJBIIGwij+Duq1zEGAT/t8/yr3FqPEPSZIPeUDfnj516Ec0Y53jb2pNHM8cnBSSFgDEwOgJ/0gsfyqzmwBuFl/CyqQfTSB39Kr5i72SJBVoOCOhX+xrvF3U8Oy/8A9sKf8ykk/mM+tLli/Xv2oaFaK9yuxazTVLKr4isJIML65YE/+00DxLhQzDAyRE4nb8xS7jOYOXGf6THc4+s10zeiKUfmRitTdjZmLSFMlVJA6ADePWl1wkb71ZZ4kW2IO7KR2wRI/SoW7LOyDq5gT7xUZ5bbsdQpKgdRTLl9sNbdDGRPsREHt6d6DdMJkefVjqIjf3mmHJ50vmAATqnAJg5g42B+/SuTqJ/stefsWxR/dXsL2JtXARgow6ZkHemnAHw7lt0jSwEnfzS0wBtAikvGcULjyMAxJO0xBPoMVOxxBJRRsmJwY80YPXJERS5lKcN+63Gx0pGg41dV2+pMh7RxA3tqow2+6zntSrgOEBZZHkJ831g+24+opuVJvpMS1sggk7EEbZKmIPWkfK7uokZmCAVM5xHaRia5cEnoaXhFMsE5ILbgWUPtOlo/zCfvihHuLptdSjHYgfihszA3Bq9uLhbhMzAYdPxKwwD/AJwZ/LFIkvsuxiujHCU71diaUYcGh4biy18EwVz0kGJjIxud9qPsMX4S7MEh7hxn1n1znriaScm4mDBYyT5dtz0z09jWk4bgj4d+2AhGrIEx5oBEapH2iPlXH1KjCSXFV9y0d19RHyTSzsrEnUAvWegEHr07YpYb/Q4j86J5K0XlzjUu3oR9Oma7zbg4u3AOrE/I5/Wu+DUcrT7pM557xTII5UlQM9ScEEEyPSpB6nxCwxPUhfrAmfvVZz2HtVW04pkJbM6W7UDcvZ3otq6OGBzj61lRkn2KbfGkGYmSSZyTJ7/X6084Ti/8Z2YIZ0zMQRpVRHrOc+tZzltk3LttAJlhj0kTTHmF4m/cKbKxHbCkAjfoAajmhFyr2OuM2t/cDZ9Rd8ks2GOTvvG3pk4rVcpVxB2II8o8yhcaoIyn4fY0ktcru23VFyWRbnbDCSOoxkdNq2jcCTbVboKjRLkSqgzG4kA7mT746cvV5I6Ulun4LYIvdsyXE20biWBnw/M0T0Mt5Rv1MLHyps1mbN0ZRtMEMIUGVwBhV1bGBgnrvS/iLf8AjAvqueGSNlaVU+UkjfTuSARPvTXjFNu25MnABkgHU7AqQcqWBg43BMio5pfCk/A0Y8gHO7Q0YUkjt3CW/MfSTHzGOtZkI85kCtNzziALerTD69OACsaYYAnKgyDHffMVm7nEyIHp+dd3Qt+luc3UfFsNeTXPM04mO8kScdu/Sl/OT/ikwMqNp7adiBp22p7yjhNVsuTOnYHKwckZAjpmcfakfHXxcu7+UY31AAwDB7QB3ihikpZ212W401UEgIY2E4gjO8+lGcIZZFIJBPQ4BMAHHWOu9cs2Qdb6vLJgf1HMZx+xTLlnCp4oDC5tkABupBkKJXI+VWy5FT9hYRs0PCogVBrcFWypnJIOSNjkDPpQHFWy4unUDlG3825Glj6asekCnvEoiKSCpIUaZ30gf1yD1EbYHuaVcTb8OxfYgA+aJgmCqsJI3IYGPcV4vT5kpp+WvudOWqaQBylpZhgrjE9pn/aqfie4VZRgddoMbfPIJn1qjlXECBkgnM6iJgk7bHcDpVPxBxIuFIGdiB36dTn/AGr0XGT6rV2I7elQs4y6SRMYFWXeJ1W7aTOmffJGPt96CuVeLIhSWgEnEZAABmPn9q9CT7sglsOueMot2tOA1td95DPM/MD7UhdiTj7/ALzTv4iK6LAUj/lyQDMFjOrIB80TSHf/AHqeGblBOXv9wuKTdBd67m3M4gmevrTVeYKoRgJ0t5fTzBv0+9IH3rheqOKlyL8hk/FN4ilRgGQOwmTTjlj/APMO7afw6Tge64AmcY3rNi3jUesjp0j/AL034Z104GmVUMVkKGDyNQyM7Tt+Vc+eOqNFMbpitEJYgDuYycdBjJ96N4fh/MFIjAnAJywgzGMx161UtvTcP4gMn+kxB9D1xtRfLOGc3NKRkdx0gnExup+VHI/2/wADQW4+IGu2wbKhlG4kSIBYSII6Z3pR/CC3fuKCY/lJ6q2R13j7jaj+GcHUSxJtk4JwRp3mCJxGau5uAGtuhB1ppYGJkAZLb/zR9dq8yEnCWnyv+lpNN2KubWwbKQIZPK2+R5QJnqIj5Vn4iDj9/nWx5gfEuXba5OmQNME+ZWWCBmc7+mepyd4LgAGRIOZkz7YxXd0krjT+f1Iz2Y24a4ENvSFBZBJmMgmZEwYH5U45TeUi7pIXyk4b2mSAO2CM4ms07+RCrZyCMyAIM43B/eKJ5bx5W5EhdUqSB32nuKnnwaotrn8MMZ0D8K5F4FcEv7mJ79/WiufXCnEXQR0gf9Sggj6/lTTgvhwl2GrYW2WIzrOfUQJ2NC/FXKwt7WWI8QA7SAQoUj7T862PPjlnSvt+BZQahv5F1m/qA9AB9BH6VIv9e1C2bBBMMCMd+4o/hbJLTEnpA+Vdy03V7EGDXiV/FiOlU3L5nBgdqacRy12ksGiZ2M/9qpPDWhggT6kz+dZSh23BwT+EuDNzi1wfIZOJGJwZONj3q7g7LXGuO64DqpH85LagNz0gb9/SjeR8UthLt0eYsRIgAjJ23GMe1DLzICSE0kvrJA8xnETPqSa4MkpTnJpeEv8ATpi4qK3NNzPgmLWHVQUCKruGAIAlszOAJPlzj2FOWHh21aGuMFGF/EQQTOTnc4NZ278RvckIukRCggYxBM/Ka0vFcMbyjw7kKyr+H/LG429ga8bJGcVFZNl/h1wkt6FFq1PEYRIKwYQA6hkBwCRM5zB7YoD4rvNb0W0UeHdwZEsjowyCDg4O89a0PG8L4dzxNOm3EPmAfK4kGZnzLO2xrMcyuBgB4iEBw5UTnsO407b9a6cENU1JbpfgXJNRTVgHxKymymIfUdtu7A9jJk9du9K15MCRN+0ATmSwIWd/wxkGd8Ux5mzXAEa4Qo6aewic5/fpQycCP/UubjdZ29P3vXq9PinDHV1ycU8kXKzXcs5JbKkLcS4u6FLmcGOnUAfWuXPgaydTM93xGknSRuTJgRnBj1gnrWVXgCCGTWGGQQCDTSxxvERDXrkAzlJIxBIOoRXHk6PqYvVjmVWaDVNBI+HuFTP8VdtLIzcXSZGfxMoA6Y6zSvhl4ezeLniC+WMhGIM5ie8kn9ahzLg2clmua/8ANqB+5NLjwRGxH1NdEOlyOL1ybvnj8EJZt9kaDmfxFYcg27b4BGcKR7T+fpSvjedNdQoVhSIwcn7UEeEIrhskdKbH0OOFUm6FeeT7nuAKIwkkRmcEgxj5TXEv2wxYIDAETOGGZiqXQ7xUdOPeul47e5ozdcg91gxJgAneNp9uldNwGN/2AP0rj2871EWapSQbCeJveJp1EeVQJJPrGM0GiknFXNYMT02HuP2Kv4YPbfVbJBjeJ99xmlTUY1EN+QJUJMdau/goEs49hmiuG4dnuSwbzNLECNyZIGw/7V1+FciGgTW1MVyfYFRNSxgZ6/3imXF21L3NMYPlBgAgz1/2qkcOyxHTOds/7Vc34VHXM46iYPrv9qlO27Q0WgfgmUtpYHYxGT+FsATkTHWmHLAvm8l1oVsiBB0kmBPaTEn7ZHCMAALirG3lPed4wentUgWUki4MyIEgZEHGwmlk72KxkkDcsJkxJnsCSMyDAOdtjTPnxDNbKnGE0sQGBG5gbLg4nE0HZ4cYAKEHecEdIzTu/cXQoXSw6y/mAnafvBrnzSrIpJWaNVVk+X2ivGXC4gaVExM9dxkbx1/DWY5xwnh3WXsSD7itbZ4pzce4VuZAMgox3Ewqx2pT8Ttca5pIYrMiU0gwIPTIx3qWCcln7U1XPgM6cdjOOdq4hg1qOHt27ajxLZVXBhlyCGEQQe2evQULd5faYApcGQAQVP4p3x02+tdq6mLtNP58k9O3IVyvn7I+o4hQFEakGBqwTIkgHE9cU4vcXa4lGFwIMDKv2z5S34T6OBPfaspf5dctsQRPYjIM7QarBZTiQfoa5ZdNCUlKPIyzSitL3Q8f4daV8N/EVvwsunt11MNP5etQb4euqoLeIO48FzA7ypK/UilSXjJO3eIidpjamXB84uJGZAOxONo26fI081mitmn9x7w1wSs8siZ4h7R7PauCR38oYRVl3ldokluJUk5J8O5/8abW/iwxlSJ/pZx+TRXP/FHq3+s/rbJ+9cby9Ve0X/X4A3DyZlEIEaRnuaqe22qQggDarmcCJBHqcV7xx3H1r3Vih5OHXLwQS1cABHlPecx+lXWQVEBo9etR8UE4P3nNeLeo9d/2KPpYzPIy43WO7M3ua4nEuD5D9JmoFSN2H7+dRKz1yOgH7/Kiklw/6NbLDeudWPtUVvXJ/FHzNQWO8+g/3rygfT12oamwXItHE3P62+pqPjv/AOo2exqskD1E1Et7/b+9DVpMnJhCcTc6XW/1GrBxtwxqYP8A5gD9yMUtdz7e+1dZ4Ek4rRzOIWpBXE8XbETj1G2OkeveuO1sZ1GPUA0JYRnaZCgdWDQP9IJ9Ou9UWhAGDPrmPamnNOKfcZR8jEXB7j2q1OKgHS5Weik/v1pXrJ9fzmupbPcCpbs3p+40HGvEb95AP51H+IJM6Ex2RR+S5oREIG5/7V0Kelwx6jP6/nSaH2Gp+Rg3ENH4UGZwoGe3t6VJuOM5W39CPspEUte2zbufqK6LKz5snvNMozXc1e4wPHr/ADKIjoT/APtNdHFJ0C47rQfgAdvYwcfKo6B6/Lp9ak4T8sFl78QDMKv3/Vqr8VDvIx6b/M1EbdDXhHYfSqxlKPZfyKyRZen5VwR6T71xkG50n5VWU9vSqapPsjKPktIEbYqMr0NeBjcZ3n7b1GE7Z9J/ZoNut4r+DUdiNj9KsTi3UQLjAe+PptVS2lPf51IcODtn996hKMXzEO67hPD8YqroZQUmTBIO3zX12qF4WyDA9v5T84kH6CqTw3eveEPeo+lFO1aDqkSO2GYdwcr+/lVLTJkg/v7VdFcNv9zTqNcA1SKCtcNurwonf710qO4rPUb5lEV3V6Gr3UevyzUdCf1Udw0UXOGj+oT13/WuJwy/1/Ij+1er1X7FGQa3nDrPvFdThX7gzHWvV6iwNHLlu4BhSPoKqNq51BrtepUzIkly4CRLD6j86n4tzsx+ter1BsxzxG7Ga8LlzoGHeAa9XqCkwnv8Q7Bz12O1WIjmNSEjsa9XqOpi6mXC5vPz9K49r+ozXq9T5V3DEp2kSPrUhbjYT6SflntXq9WXCGPIkZKz7H+1Shd4+u//AHrteopiklYDfE7bfpU1GSR+lcr1ZN0Ak84kR8q5qMfp1r1eo6mGkeB9IPSvV6vUWBHgI6z++1eUfrXK9Ssx0KP31rjrXq9RYWR0RXADufp+xXq9WYCw3Ns14ue01yvUNK2MSVx1FdDCu16tpRjmgHpUWtVyvVnFGfBHQelcdGnavV6tQKP/2Q==" class="img-fluid  mb-5" alt="Websearch">
+								</div>
+		
+								<div class="card-title mb-4 text-center fs-2">Rainier National Park</div>
+								
+								<div class="text-center mt-auto mb-4">
+									<span class="fw-bold fs-2 "><td>$25</td>
+								</div>
+								<div class="text-center"><button type="button" class="btn btncolor">Admission</button></div>
+		
+							</div>
+						</div>
+		
+					</div>
+		
+		
+					<div class="col-lg-4 col-md-6 mb-3">
+						<div class="card py-4 px-lg-5 h-100">
+							<div class="card-body d-flex flex-column">
+								<div class="text-center">
+									<img src="https://images.unsplash.com/photo-1536523965721-a6e354bd19fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bm9ydGglMjBjYXNjYWRlcyUyMG5hdGlvbmFsJTIwcGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" class="img-fluid  mb-5" alt="Websearch">
+								</div>
+		
+								<div class="card-title mb-4 text-center fs-2">North Cascades National Park</div>
+								
+								<div class="text-center mt-auto mb-4">
+									<span class="fw-bold fs-2 "><td>Free</td>
+								</div>
+								<div class="text-center"><button type="button" class="btn btncolor">Admission</button></div>
+		
+							</div>
+						</div>
+		
+					</div>
+		
+					<div class="col-lg-4 col-md-6 mb-3">
+						<div class="card py-4 px-lg-5 h-100">
+							<div class="card-body d-flex flex-column">
+								<div class="text-center">
+									<img src="https://images.unsplash.com/photo-1516572882656-dc5249697fc2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2x5bXBpYyUyMG5hdGlvbmFsJTIwcGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800" class="img-fluid  mb-5" alt="Websearch">
+								</div>
+		
+								<div class="card-title mb-4 text-center fs-2">Olympic National Park</div>
+								
+								<div class="text-center mt-auto mb-4">
+									<span class="fw-bold fs-2 "><td>Free</td>
+								</div>
+								<div class="text-center"><button type="button" class="btn btncolor">Admission</button></div>
+		
+							</div>
+						</div>
+		
+					</div>
+				</div>
+			</div>
 
 
-				<section><h2>Olympic National Park</h2></section>
-				<img src="https://www.themandagies.com/wp-content/uploads/2020/02/rialto-beach-hole-in-the-wall-hike-olympic-national-park-washington-pnw-the-mandagies-57.jpg" width="550" height="500">
-
-
-					<table>
-						<h3>Summer Admission Prices</h3>
-    					<thead>
-    						<tr>
-      							<th></th>
-      							<th></th>
-      							<th>Rainier National Park</th>
-      							<th>North Cascades National Park</th>
-      							<th>Olympic National Park</th>
-    						</tr>
-    					</thead>
-    						<tbody>
-    							<tr>
-    								<td></td>
-      								<td>Admission</td>
-      								<td>$25</td>
-      								<td>Free</td>
-      								<td>Free</td>
-    							</tr>
-    						</tbody>
-  					</table>
-<br>
-<br>
-  					<form>
-  						<h3>Subscribe For More Information:</h3>
-  						<label for="name">Name:</label><br>
-  							<input type="text" id="name" name="name"><br>
-  						<label for="emailadd">Email Address:</label><br>
-  							<input type="text" id="emailadd" name="emailadd"><br>
-  							<input type="submit" id="submit" name="submit"><br>
-					</form>
+					<div class="banner">
+						<div class="container p-5">
+						
+					 <div class="card mx-3 mt-n5 shadow-lg" style="border-radius:0px; border:none">
+						<div class="card-body p-5">
+							<h4 class="card-title mb-3 text-dark text-uppercase" style="font-weight:700">Subscribe For More Information:</h4>
+				
+							<form>
+									<h3>Subscribe For More Information:</h3>
+								<div class="row">
+									<div class="col">
+										<div class="form-floating mb-3">
+											<input type="text" class="form-control" id="floatingTextInput1" placeholder="John">
+											<label for="floatingTextInput1">First Name</label>
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-floating mb-3">
+											<input type="text" class="form-control" id="floatingTextInput2" placeholder="Smith">
+											<label for="floatingTextInput2">Last Name</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="email" class="form-control" id="floatingEmailInput" placeholder="name@example.com">
+									<label for="floatingEmailInput">Email address</label>
+								</div>
+								<div class="form-check form-switch mb-3">
+									<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+									<label class="form-check-label" for="flexSwitchCheckChecked">I agree to the Terms and Conditions of this Website.</label>
+								</div>
+								<div class="text-center">
+								<button type="submit" class="btn btn-primary" style="border-radius:0px">Submit</button>
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				</div>
 
 
 

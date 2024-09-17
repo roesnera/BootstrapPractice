@@ -1,0 +1,52 @@
+
+body {
+  background-color: cornflowerblue;
+}
+header > h1 {
+  text-align: center;
+}
+.hero {
+  position: relative;
+  top:50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.table-header {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.btncolor{
+  background-color: #b923ff;
+  border-radius: 55555px;
+  padding: 1rem 2rem!important;
+  color: #ffff;
+  margin-bottom: 2rem;
+  
+}
+
+
+form>h1 {
+text-align: center;
+}
+
+.banner {
+  background:linear-gradient(to left, #007bff, #9198e5);
+}
+.form-control{
+  background:#F2F2F2;
+  border-radius:0px;
+  border:none;
+}
+
+
+
+
+
+
+
+
+
+
