@@ -1,0 +1,57 @@
+* {
+    color: rgb(244, 244, 244);
+    background-color: rgb(43, 43, 43);
+}
+
+img {
+    margin-top: 12px;
+    height: 160px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.card {
+    background: linear-gradient(rgb(42, 42, 42), rgb(24, 24, 24));
+    margin: 20px auto;
+    padding-bottom: 10px;
+    text-align: center;
+    border-width: 0px;
+}
+
+.row {
+    margin: 0px auto;
+}
+
+form {
+    border: 3px rgb(8, 8, 8) solid;
+    width: max-content;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.input-container {
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+}
+
+.card-title {
+    height: 2.2em;
+}
+
+.card-text {
+    height: 4.5em;
+}
+
+.navbar-collapse {
+    background: linear-gradient(to right, rgb(43, 43, 43) 30%, rgb(20, 20, 20));
+}
+
+#submit {
+    margin: 8px;
+    padding: 4px 12px;
+}
